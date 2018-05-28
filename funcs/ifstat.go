@@ -1,7 +1,7 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/tools/net"
+	"github.com/axengine/agent/tools/net"
 	"github.com/open-falcon/common/model"
 	"log"
 )

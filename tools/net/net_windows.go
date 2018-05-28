@@ -6,7 +6,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/LeonZYang/agent/tools/internal/common"
+	"github.com/axengine/agent/tools/internal/common"
 )
 
 var (
@@ -33,15 +33,18 @@ func NetIOCounters(pernic bool) ([]NetIOCountersStat, error) {
 		return nil, err
 	}
 
-	ai, err := getAdapterList()
-	if err != nil {
-		return nil, err
-	}
 	var ret []NetIOCountersStat
 
 	for _, ifi := range ifs {
 		name := ifi.Name
+		ai, err := getAdapterList()
+		if err != nil {
+			return nil, err
+		}
 		for ; ai != nil; ai = ai.Next {
+			if ai.Index != uint32(ifi.Index) {
+				continue
+			}
 			c := NetIOCountersStat{
 				Name: name,
 			}

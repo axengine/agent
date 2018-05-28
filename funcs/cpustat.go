@@ -1,7 +1,7 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/tools/cpu"
+	"github.com/axengine/agent/tools/cpu"
 	"github.com/open-falcon/common/model"
 	"sync"
 )

@@ -1,7 +1,7 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/tools/disk"
+	"github.com/axengine/agent/tools/disk"
 	"github.com/open-falcon/common/model"
 	"log"
 )

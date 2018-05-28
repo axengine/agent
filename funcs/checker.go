@@ -2,7 +2,7 @@ package funcs
 
 import (
 	"fmt"
-	"github.com/LeonZYang/agent/tools/cpu"
+	"github.com/axengine/agent/tools/cpu"
 )
 
 func CheckCollector() {

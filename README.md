@@ -12,10 +12,10 @@ It is a golang classic project
 
 ```
 # set $GOPATH and $GOROOT
-git clone https://github.com/LeonZYang/agent.git
+git clone https://github.com/axengine/agent.git
 cd agent
 go build -o falcon-agent.exe
-C:\workspace\src\github.com\LeonZYang\agent\falcon-agent.exe -c C:\workspace\src\github.com\LeonZYang\agent\cfg.json > C:\workspace\src\github.com\LeonZYang\agent\var\var.log 2>&1
+C:\workspace\src\github.com\axengine\agent\falcon-agent.exe -c C:\workspace\src\github.com\axengine\agent\cfg.json > C:\workspace\src\github.com\axengine\agent\var\var.log 2>&1
 ```
 
 ## Configuration
